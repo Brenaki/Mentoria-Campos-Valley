@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main header {
+    background-color: #cbd5e1;
+    display: flex;
+}
+
+main header img {
+    width: 4rem;
+    cursor: pointer;
+}
+
+main header span {
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-weight: medium;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+main div {
+    display: flex;
+    item-align: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+main div form {
+    justify-content: center;
+    item-align: center;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #e2e8f0;
+}
+
+main div form h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-size: 2em;
+}
+
+main div form .text{
+    width: 100%;
+    padding: 0.3rem 0.3rem;
+    border-radius: 0.3rem;
+    border-color: #e2e8f0;
+}
+
+main div form .text:hover {
+    border-color: #cbd5e1;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+main div form p {
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    font-size: 1rem;
+}
+
+main div form p span {
+    color: red;
+}
+
+main div form button {
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border-color: #e2e8f0;
+}
+
+main div form button:hover {
+    border-color: #cbd5e1;
+    background-color: #d0d0d0;
+    cursor: pointer;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
