@@ -7,8 +7,7 @@ export function App() {
   return (
    <>
    <main className="flex min-h-screen min-w-full justify-evenly">
-    <header>
-    </header>
+    
     <div className="flex flex-col p-32 gap-y-8">
       <div className="flex items-center justify-center gap-2">
         <img className="w-8 h-8" src="/icon_topwebsite.svg" alt="" />
