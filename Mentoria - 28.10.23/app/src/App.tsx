@@ -1,6 +1,6 @@
-import { AtSign, LockKeyhole, Mail } from "lucide-react";
 import { Button } from "./components/ui/button";
-import { Input } from "./components/ui/input";
+import { CustomInput } from "./components/CustomInput/CustomInput";
+import { TextLink } from "./components/TextLink/TextLink";
 
 export function App() {
 
@@ -23,72 +23,16 @@ export function App() {
       </div>
       <div className="flex flex-col gap-y-6 min-w-full">
         <span className="font-bold text-lg">Create Your Account</span>
-        <div>
-          <span 
-          className="text-sm font-semibold">Username</span>
-          <div className="flex items-center">
-            <AtSign className="bg-slate-200 p-2 rounded-l-md dark:bg-slate-800" size={40}/>
-            <Input className="transition-all duration-500
-            p-2 rounded-r-md rounded-l-none
-            hover:font-semibold hover:text-lg
-            hover:text-black
-            placeholder:font-normal 
-            placeholder:text-sm
-            placeholder:text-muted-foreground
-            dark:hover:text-white"
-            placeholder="Enter your username"
-            type="text"
-            />
-          </div>
-        </div>
-        <div>
-          <span 
-          className="text-sm font-semibold">Email</span>
-          <div className="flex items-center">
-            <Mail className="bg-slate-200 p-2 rounded-l-md dark:bg-slate-800" size={40}/>
-            <Input className="transition-all duration-500
-            p-2 rounded-r-md rounded-l-none
-            hover:font-semibold hover:text-lg
-            hover:text-black
-            placeholder:font-normal 
-            placeholder:text-sm
-            placeholder:text-muted-foreground
-            dark:hover:text-white"
-            placeholder="Enter your email address"
-            type="email"
-            />
-          </div>
-        </div>
-        <div>
-          <span 
-          className="text-sm font-semibold">Password</span>
-          <div className="flex items-center">
-            <LockKeyhole className="bg-slate-200 p-2 rounded-l-md dark:bg-slate-800" size={40}/>
-            <Input className="transition-all duration-500
-            p-2 rounded-r-md rounded-l-none
-            hover:font-semibold hover:text-lg
-            hover:text-black
-            placeholder:font-normal 
-            placeholder:text-sm
-            placeholder:text-muted-foreground
-            dark:hover:text-white"
-            placeholder="Enter a secure password (8 - 26 characters)"
-            type="password"
-            />
-          </div>
-        </div>
-        <Button asChild
-        className="transition-all duration-500
-        bg-sky-600 opacity-50 text-white
-        hover:opacity-100 hover:bg-sky-500">
-          <a href="/SignUp" target="_blank">
-            Sign Up
-          </a>
+        <CustomInput span="Username" nameIcon="AtSign" placeholder="Enter your username" type="text" size={40}/>
+        <CustomInput span="Email" nameIcon="Mail" placeholder="Enter your email address" type="email" size={40}/>
+        <CustomInput span="Password" nameIcon="LockKeyhole" placeholder="Enter a secure password (8 - 26 characters)" type="password" size={40}/>
+        <Button asChild className="transition-all duration-500 bg-sky-600 opacity-50 text-white hover:opacity-100 hover:bg-sky-500">
+            <a href="/SignUp" target="_blank">
+              Sign Up
+            </a>
           </Button>
       </div>
-      <span className="flex gap-4 text-sm font-semibold">Already have an account? 
-      <a href="/SignIn" target="_blank"
-      className="text-sky-600">Sign In</a></span>
+      <TextLink link="/SignIn" span="Already have an account?" nameLink="Sign In"/>
     </div>
       <img className="w-[50rem]" src="/woman_studying.svg" alt="" />
    </main>
