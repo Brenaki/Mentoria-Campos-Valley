@@ -1,13 +1,14 @@
 import { Button } from "../components/ui/button";
 import { CustomInput } from "../components/CustomInput/CustomInput";
 import { TextLink } from "../components/TextLink/TextLink";
+import { CustomMain } from "@/CustomMain/styles";
 
 export const SignUp = () => {
 
   return (
    <>
-   <main className="flex min-h-screen min-w-full justify-evenly">
-    <div className="flex flex-col p-32 gap-y-8">
+   <CustomMain>
+    <div className="flex flex-col p-32 gap-y-8 xl:gap-y-10">
       <div className="flex items-center justify-center gap-2">
         <img className="w-8 h-8" src="/icon_topwebsite.svg" alt="" />
         <span className="text-3xl text-sky-800 font-bold
@@ -16,7 +17,7 @@ export const SignUp = () => {
       <div className="flex flex-col gap-y-2">
         <div className="flex items-center gap-2">
           <span className="text-2xl font-bold">Join the Learning Community</span>
-          <img className="w-8" src="/light-bulb.svg" alt="" />
+          <img className="w-6" src="/light-bulb.svg" alt="" />
         </div>
         <span className="text-sm text-muted-foreground">Welcome to LearnMore, your gateway to collaborative learning and knowledge exchange</span>
       </div>
@@ -33,8 +34,8 @@ export const SignUp = () => {
       </div>
       <TextLink link="/SignIn" span="Already have an account?" nameLink="Sign In"/>
     </div>
-      <img className="w-[50rem]" src="/woman_studying.svg" alt="" />
-   </main>
+      <img className="w-[40rem] sm:w-[30rem] md:w-[40rem] lg:w-[45rem] xl:w-[50rem]" src="/woman_studying.svg" alt="" />
+   </CustomMain>
    </>
   )
 }

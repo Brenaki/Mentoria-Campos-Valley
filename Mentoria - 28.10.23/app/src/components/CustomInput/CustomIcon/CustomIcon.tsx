@@ -7,6 +7,7 @@ interface PropsIcon {
 }
 
 export const CustomIcon: React.FC<PropsIcon> = ({name, size}) => {
+
     switch(name) {
         case "AtSign":
             return <AtSign size={size} className={Icon} />;

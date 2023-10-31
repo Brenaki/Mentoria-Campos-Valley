@@ -1,5 +1,5 @@
 import React from "react";
-import { CustomIcon } from "../CustomIcon/CustomIcon";
+import { CustomIcon } from "./CustomIcon/CustomIcon";
 import { CustomDiv, CustomSpan, StyleInput } from "./styles";
 
 interface PropsInput {

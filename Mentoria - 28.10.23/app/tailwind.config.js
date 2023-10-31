@@ -14,6 +14,11 @@ module.exports = {
       screens: {
         "2xl": "1400px",
       },
+    fontFamily: {
+      'sans': ['ui-sans-serif', 'Roboto'],
+      'serif': ['ui-serif', 'Georgia'],
+      'mono': ['ui-monospace', 'Space Mono'],
+    },
     },
     extend: {
       colors: {
