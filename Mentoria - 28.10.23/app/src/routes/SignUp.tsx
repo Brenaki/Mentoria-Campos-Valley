@@ -1,7 +1,7 @@
 import { Button } from "../components/ui/button";
 import { CustomInput } from "../components/CustomInput/CustomInput";
 import { TextLink } from "../components/TextLink/TextLink";
-import { CustomMain } from "@/CustomMain/styles";
+import { CustomMain } from "@/components/CustomMain/styles";
 
 export const SignUp = () => {
 

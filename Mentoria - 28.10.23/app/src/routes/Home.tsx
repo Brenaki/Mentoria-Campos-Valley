@@ -1,5 +1,5 @@
 import { NavBar } from "@/components/NavBar/NavBarProps";
-import { SelectionIte } from "@/components/SelectionItens/SelectionItens";
+import { SelectionItems } from "@/components/SelectionItens/SelectionItens";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 
@@ -26,9 +26,9 @@ export const Home = () => {
                             <Button className="transition-colors duration-300 bg-white hover:bg-sky-500"><a href="/SignUp"><ChevronRight className="text-primary"/></a></Button>
                         </div>
                         <div className="flex gap-8 p-8 justify-evenly sm:flex-col md:flex-col lg:flex-row">
-                            <SelectionIte nameIcon="FastForward" size={30} span="Less Time" />
-                            <SelectionIte nameIcon="BookCheck" size={30} span="Organize your academic life" />
-                            <SelectionIte nameIcon="CalendarHeart" size={30} span="Connects with your calendar" />
+                            <SelectionItems nameIcon="FastForward" size={30} span="Less Time" />
+                            <SelectionItems nameIcon="BookCheck" size={30} span="Organize your academic life" />
+                            <SelectionItems nameIcon="CalendarHeart" size={30} span="Connects with your calendar" />
                         </div>
                     </div>
                 </div>

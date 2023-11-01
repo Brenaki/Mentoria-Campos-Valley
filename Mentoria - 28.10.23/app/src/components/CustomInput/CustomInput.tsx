@@ -1,5 +1,5 @@
 import React from "react";
-import { CustomIcon } from "./CustomIcon/CustomIcon";
+import { CustomIcon } from "../CustomIcon/Icons";
 import { CustomDiv, CustomSpan, StyleInput } from "./styles";
 
 interface PropsInput {
@@ -16,7 +16,7 @@ export const CustomInput: React.FC<PropsInput> = ({span, nameIcon, size, placeho
         <div>
           <CustomSpan>{span}</CustomSpan>
           <CustomDiv>
-            <CustomIcon name={nameIcon} size={size} />
+            <CustomIcon name={nameIcon} size={size} style={1}/>
             <StyleInput placeholder={placeholder} type={type}/>
           </CustomDiv>
         </div>

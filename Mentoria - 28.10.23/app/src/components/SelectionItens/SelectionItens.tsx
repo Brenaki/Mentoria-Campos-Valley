@@ -1,21 +1,21 @@
 import React from "react";
-import { CustomIcon } from "./CustomIcon/CustomIcon";
-import { Ite, Span} from "./styles";
+import { CustomIcon } from "../CustomIcon/Icons";
+import { Items, Span} from "./styles";
 
-interface PropsInput {
+interface PropsSelectionItems {
     span: string,
     nameIcon: "FastForward" | "CalendarHeart" | "BookCheck"
     size?: number;
 }
 
-export const SelectionIte: React.FC<PropsInput> = ({span, nameIcon, size}) => {
+export const SelectionItems: React.FC<PropsSelectionItems> = ({span, nameIcon, size}) => {
     
     return (
         <div>
-            <Ite>
-                <CustomIcon name={nameIcon} size={size}/>
+            <Items>
+                <CustomIcon name={nameIcon} size={size} style={2}/>
                 <Span>{span}</Span>
-            </Ite>
+            </Items>
         </div>
     )
 }

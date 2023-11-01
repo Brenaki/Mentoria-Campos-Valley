@@ -15,7 +15,7 @@ module.exports = {
         "2xl": "1400px",
       },
     fontFamily: {
-      'sans': ['ui-sans-serif', 'Roboto'],
+      'sans': ['ui-sans-serif', 'Roboto', 'Poppins'],
       'serif': ['ui-serif', 'Georgia'],
       'mono': ['ui-monospace', 'Space Mono'],
     },

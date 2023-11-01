@@ -1,6 +1,6 @@
 import tw from "tailwind-styled-components";
 
-export const Ite = tw.div`
+export const Items = tw.div`
     transition-all
     duration-300
     flex flex-col w-[8rem]
@@ -9,7 +9,7 @@ export const Ite = tw.div`
     gap-2 
     hover:-translate-y-3
     hover:bg-sky-500
-    hover:text-white
+    hover:text-secondary
     p-4
     rounded-md
 ` 
