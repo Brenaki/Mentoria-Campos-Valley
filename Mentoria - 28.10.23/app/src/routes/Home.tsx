@@ -15,7 +15,7 @@ export const Home = () => {
         <>
             <main className="flex flex-col min-h-screen min-w-full">
                 <NavBar links={links} />
-                <div className="flex gap-[12rem] mt-[18rem] min-h-full p-8 items-center justify-center sm:flex-col md:flex-col lg:flex-row">
+                <div className="flex gap-[12rem] mt-[18rem] min-h-full p-8 items-center justify-around sm:flex-col md:flex-col lg:flex-row">
                     <div className="flex justify-center items-center">
                         <h1 className="font-semibold text-[2.5rem]">Come Study Better and Learn More</h1>
                     </div>

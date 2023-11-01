@@ -8,7 +8,7 @@ export const SignUp = () => {
   return (
    <>
    <CustomMain>
-    <div className="flex flex-col p-32 gap-y-8 xl:gap-y-10">
+    <div className="flex flex-col p-32 gap-y-8 xl:gap-y-10 justify-around">
       <div className="flex items-center justify-center gap-2">
         <img className="w-8 h-8" src="/icon_topwebsite.svg" alt="" />
         <span className="text-3xl text-sky-800 font-bold
@@ -19,7 +19,7 @@ export const SignUp = () => {
           <span className="text-2xl font-bold">Join the Learning Community</span>
           <img className="w-6" src="/light-bulb.svg" alt="" />
         </div>
-        <span className="text-sm text-muted-foreground">Welcome to LearnMore, your gateway to collaborative learning and knowledge exchange</span>
+        <span className="text-sm text-muted-foreground">Welcome to Learn More, here you will be able to organize your subjects, books, objectives and your study schedule</span>
       </div>
       <div className="flex flex-col gap-y-6 min-w-full">
         <span className="font-bold text-lg">Create Your Account</span>

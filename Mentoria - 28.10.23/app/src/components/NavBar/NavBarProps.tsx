@@ -10,7 +10,9 @@ export const NavBar: React.FC<PropsNavBar> = ({ links }) => {
         <nav className="w-full h-16">
             <div className="flex items-center justify-between p-4">
                 <div>
-                    <img className='w-32' src="/logo_learnmore.svg" alt="Logo" />
+                    <a href="/">
+                        <img className='w-32' src="/logo_learnmore.svg" alt="Logo" />
+                    </a>
                 </div>
                 <div className=''>
                     {links.map((link) => (

@@ -10,7 +10,7 @@ export function App() {
     <Outlet />
     <footer className="flex items-center justify-around p-4 bg-sky-800 font-['Poppins'] text-white">
       <div className="flex">
-        <Hover title="Developed and Designed Victor A. L. Cerqueira" at="@brenaki" date="Project Started October, 2023" sentence={`Victor Angelo Legat Cerqueira is ${Birthday()} years old and is studying Computer Engineering. His hobbies are playing games, playing basketball and volleyball, programming and listening to music.`} avatar="/avatar.svg" navatar="VALC"/>
+        <Hover title="Developed and Designed by Victor A. L. Cerqueira" at="@brenaki" date="Project Started October, 2023" sentence={`Victor Angelo Legat Cerqueira is ${Birthday()} years old and is studying Computer Engineering. His hobbies are playing games, playing basketball and volleyball, programming and listening to music.`} avatar="/avatar.svg" navatar="VALC"/>
       </div>
       <div className="transition-colors flex hover:text-red-500 cursor-pointer">
         <a href="https://www.linkedin.com/company/valc-developer">Copyright © 2023 VALC</a>
